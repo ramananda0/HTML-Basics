@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- lang="en" tells the browser the language of the page -->
+<head>
+    <!-- <head> contains meta-information about the document (not visible on page) -->
+    <meta charset="UTF-8">
+    <!-- <meta charset> defines the character encoding — UTF-8 supports all characters -->
+    <title>HTML Basics - Learn All Common HTML Tags</title>
+    <!-- <title> sets the text shown in the browser tab -->
+
+</head>
+
+<body>
+    <!-- <body> contains everything VISIBLE on the web page -->
+
+
+    <!-- ============================================================ -->
+    <!--                  HEADINGS (h1 to h6)                         -->
+    <!-- ============================================================ -->
+
+    <!-- Headings define titles/subtitles. h1 is the biggest, h6 is the smallest -->
+
+    <h1>Heading Level 1 - Main Title (Largest)</h1>
+    <h2>Heading Level 2 - Section Title</h2>
+    <h3>Heading Level 3 - Sub-section Title</h3>
+    <h4>Heading Level 4 - Minor Heading</h4>
+    <h5>Heading Level 5 - Small Heading</h5>
+    <h6>Heading Level 6 - Smallest Heading</h6>
+
+
+    <!-- ============================================================ -->
+    <!--                  PARAGRAPH AND TEXT TAGS                     -->
+    <!-- ============================================================ -->
+
+    <p>This is a paragraph tag. It is used to write blocks of text. Each paragraph starts on a new line with some space above and below it. You can write as much text as you want inside a paragraph.</p>
+    <!-- <p> defines a paragraph of text -->
+
+    <p>This is another paragraph. Browsers automatically add space between paragraphs to make content readable.</p>
+
+    <br>
+    <!-- <br> inserts a line break (single empty line) — it has NO closing tag -->
+
+    <hr>
+    <!-- <hr> draws a horizontal line — used to separate sections — NO closing tag -->
+
+    <p>
+        <!-- Text Formatting Tags inside a paragraph -->
+
+        <b>Bold text using &lt;b&gt; tag</b> — makes text visually bold. <br>
+        <!-- <b> makes text bold (purely visual) -->
+
+        <strong>Strong text using &lt;strong&gt; tag</strong> — bold with importance. <br>
+        <!-- <strong> marks text as important (semantic + bold) -->
+
+        <i>Italic text using &lt;i&gt; tag</i> — slants the text. <br>
+        <!-- <i> makes text italic (purely visual) -->
+
+        <em>Emphasized text using &lt;em&gt; tag</em> — italic with emphasis. <br>
+        <!-- <em> marks text as emphasized (semantic + italic) -->
+
+        <u>Underlined text using &lt;u&gt; tag</u> — adds underline. <br>
+        <!-- <u> underlines the text -->
+
+        <s>Strikethrough text using &lt;s&gt; tag</s> — draws a line through text. <br>
+        <!-- <s> shows text that is no longer relevant -->
+
+        <del>Deleted text using &lt;del&gt; tag</del> — marks deleted content. <br>
+        <!-- <del> shows removed/deleted content (semantic strikethrough) -->
+
+        <ins>Inserted text using &lt;ins&gt; tag</ins> — marks inserted content. <br>
+        <!-- <ins> shows newly inserted/added content (usually underlined) -->
+
+        <mark>Highlighted text using &lt;mark&gt; tag</mark> — highlights text. <br>
+        <!-- <mark> highlights text with a yellow background by default -->
+
+        This is normal text with <sub>subscript</sub> using &lt;sub&gt; tag. <br>
+        <!-- <sub> renders text slightly below the baseline (e.g., H₂O) -->
+
+        This is normal text with <sup>superscript</sup> using &lt;sup&gt; tag. <br>
+        <!-- <sup> renders text slightly above the baseline (e.g., x²) -->
+
+        <small>Small text using &lt;small&gt; tag</small> — renders smaller text. <br>
+        <!-- <small> makes text appear smaller than surrounding text -->
+
+        <big>Big text using &lt;big&gt; tag</big> — renders larger text. <br>
+        <!-- <big> makes text appear bigger (deprecated in HTML5 but still works) -->
+    </p>
+
+    <blockquote>
+        This is a blockquote. It is used to display a long quotation from another source. Browsers usually indent blockquotes to make them stand out from normal text.
+    </blockquote>
+    <!-- <blockquote> defines a section quoted from another source -->
+
+    <q>This is an inline quotation using the q tag.</q>
+    <!-- <q> defines a short inline quotation (adds quotation marks automatically) -->
+
+    <br><br>
+
+    <abbr title="HyperText Markup Language">HTML</abbr>
+    <!-- <abbr> defines an abbreviation or acronym. Hover over it to see the full form -->
+
+    <br>
+
+    <cite>The Art of Learning by Josh Waitzkin</cite>
+    <!-- <cite> defines the title of a creative work (book, poem, song, etc.) -->
+
+    <br>
+
+    <code>console.log("Hello World");</code>
+    <!-- <code> displays inline computer code in a monospace font -->
+
+    <br>
+
+    <pre>
+        This is preformatted text.
+            It preserves     spaces
+        and line breaks exactly
+            as written in HTML.
+    </pre>
+    <!-- <pre> preserves whitespace and line breaks — great for code blocks -->
+
+    <kbd>Ctrl + C</kbd>
+    <!-- <kbd> represents keyboard input — text the user should type -->
+
+    <br>
+
+    <var>x = y + z</var>
+    <!-- <var> represents a variable in math or programming -->
+
+
+    <!-- ============================================================ -->
+    <!--                        LINKS                                 -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>Links (Anchor Tags)</h2>
+
+    <a href="https://www.google.com">Visit Google</a>
+    <!-- <a> defines a hyperlink. href is the URL destination -->
+
+    <br>
+
+    <a href="https://www.wikipedia.org" target="_blank">Open Wikipedia in a New Tab</a>
+    <!-- target="_blank" opens the link in a new browser tab -->
+
+    <br>
+
+    <a href="Ramananda:example@email.com">Send an Email</a>
+    <!-- Ramananda: link opens the user's default email client -->
+
+    <br>
+
+    <a href="tel:+1234567890">Call +1 234 567 890</a>
+    <!-- tel: link opens the phone dialer on mobile devices -->
+
+    <br>
+
+    <a href="#section-lists">Jump to Lists Section (Anchor Link)</a>
+    <!-- # followed by an ID jumps to that section on the same page -->
+
+
+    <!-- ============================================================ -->
+    <!--                        IMAGES                                -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>Images</h2>
+
+    <img src="pic_trulli.jpg" alt="Houses in Italy" width="300" height="200">
+    <!-- <img> embeds an image — NO closing tag needed -->
+    <!-- src = image source URL or file path -->
+    <!-- alt = alternative text (shown if image fails to load, used by screen readers) -->
+    <!-- width and height control the size of the image -->
+
+    <br><br>
+
+    <figure>
+        <!-- <figure> groups an image with its caption -->
+        <img src="img_chania.jpg" alt="Flowers in Chania" width="300">
+        <figcaption>Fig.1 - Beautiful flowers in Chania, Greece.</figcaption>
+        <!-- <figcaption> provides a caption for the <figure> element -->
+    </figure>
+
+
+    <!-- ============================================================ -->
+    <!--                        LISTS                                 -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2 id="section-lists">Lists</h2>
+
+    <!-- UNORDERED LIST (bullet points) -->
+    <h3>Unordered List (Bullet Points)</h3>
+    <ul>
+        <!-- <ul> defines an unordered (bulleted) list -->
+        <li>Apple</li>
+        <!-- <li> defines each list item -->
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Mango
+            <ul>
+                <!-- Nested list inside another list -->
+                <li>Alphonso Mango</li>
+                <li>Kesar Mango</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- ORDERED LIST (numbered) -->
+    <h3>Ordered List (Numbered)</h3>
+    <ol>
+        <!-- <ol> defines an ordered (numbered) list -->
+        <li>Wake up</li>
+        <li>Brush teeth</li>
+        <li>Eat breakfast</li>
+        <li>Study HTML</li>
+    </ol>
+
+    <!-- DESCRIPTION LIST -->
+    <h3>Description List</h3>
+    <dl>
+        <!-- <dl> defines a description list (term + definition pairs) -->
+        <dt>HTML</dt>
+        <!-- <dt> defines the term -->
+        <dd>HyperText Markup Language — used to structure web pages.</dd>
+        <!-- <dd> defines the description/definition of the term -->
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets — used to style web pages.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>A programming language used to make web pages interactive.</dd>
+    </dl>
+
+
+    <!-- ============================================================ -->
+    <!--                        TABLES                                -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>Tables</h2>
+
+    <table border="1">
+        <!-- <table> defines an HTML table. border adds a visible border -->
+
+        <caption>Student Report Card</caption>
+        <!-- <caption> provides a title for the table -->
+
+        <thead>
+            <!-- <thead> groups the header rows of the table -->
+            <tr>
+                <!-- <tr> defines a table row -->
+                <th>Name</th>
+                <!-- <th> defines a header cell (bold and centered by default) -->
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- <tbody> groups the body/data rows of the table -->
+            <tr>
+                <td>Alice</td>
+                <!-- <td> defines a standard data cell -->
+                <td>Mathematics</td>
+                <td>95</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Science</td>
+                <td>88</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>English</td>
+                <td>76</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total Students</td>
+                <!-- colspan merges columns horizontally -->
+                <td>3</td>
+                <td rowspan="1">—</td>
+                <!-- rowspan merges rows vertically -->
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- <tfoot> groups the footer rows of the table -->
+            <tr>
+                <td colspan="4">End of Report Card</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    <!-- ============================================================ -->
+    <!--                        FORMS                                 -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>Forms</h2>
+
+    <form action="#" method="post">
+        <!-- <form> creates an HTML form for user input -->
+        <!-- action = URL where form data is sent -->
+        <!-- method = HTTP method (get or post) -->
+
+        <!-- TEXT INPUT -->
+        <label for="username">Username:</label>
+        <!-- <label> associates a text label with a form element -->
+        <!-- for="..." must match the id of the input it labels -->
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <!-- <input type="text"> is a single-line text field -->
+        <!-- placeholder shows hint text inside the input -->
+        <br><br>
+
+        <!-- PASSWORD INPUT -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <!-- <input type="password"> hides the typed characters -->
+        <br><br>
+
+        <!-- EMAIL INPUT -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <!-- <input type="email"> validates email format automatically -->
+        <br><br>
+
+        <!-- NUMBER INPUT -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age">
+        <!-- <input type="number"> accepts only numeric values -->
+        <!-- min and max set the allowed range -->
+        <br><br>
+
+        <!-- DATE INPUT -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <!-- <input type="date"> shows a date picker -->
+        <br><br>
+
+        <!-- TELEPHONE INPUT -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890">
+        <!-- <input type="tel"> for phone number input -->
+        <br><br>
+
+        <!-- URL INPUT -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+        <!-- <input type="url"> validates URL format -->
+        <br><br>
+
+        <!-- COLOR PICKER -->
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <!-- <input type="color"> opens a color picker -->
+        <br><br>
+
+        <!-- RANGE SLIDER -->
+        <label for="volume">Volume (0-100):</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+        <!-- <input type="range"> creates a slider control -->
+        <br><br>
+
+        <!-- RADIO BUTTONS -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <!-- <input type="radio"> allows only ONE choice from a group -->
+        <!-- All radio buttons in the same group must share the same name -->
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- CHECKBOXES -->
+        <p>Hobbies (select all that apply):</p>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Reading</label>
+        <!-- <input type="checkbox"> allows MULTIPLE selections -->
+
+        <input type="checkbox" id="coding" name="hobby" value="coding" checked>
+        <label for="coding">Coding</label>
+        <!-- checked makes the checkbox selected by default -->
+
+        <input type="checkbox" id="gaming" name="hobby" value="gaming">
+        <label for="gaming">Gaming</label>
+        <br><br>
+
+        <!-- DROPDOWN SELECT -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <!-- <select> creates a dropdown menu -->
+            <option value="">--Select Country--</option>
+            <!-- <option> defines each item in the dropdown -->
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="in">India</option>
+            <option value="bd" selected>Bangladesh</option>
+            <!-- selected makes this option the default -->
+            <option value="ca">Canada</option>
+        </select>
+        <br><br>
+
+        <!-- MULTI-SELECT -->
+        <label for="skills">Skills (hold Ctrl to select multiple):</label><br>
+        <select id="skills" name="skills" multiple size="4">
+            <!-- multiple allows selecting more than one option -->
+            <!-- size controls how many options are visible at once -->
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+        <br><br>
+
+        <!-- TEXTAREA -->
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio" rows="5" cols="40" placeholder="Write something about yourself..."></textarea>
+        <!-- <textarea> is a multi-line text input -->
+        <!-- rows and cols control the visible size -->
+        <br><br>
+
+        <!-- FILE UPLOAD -->
+        <label for="profile">Upload Profile Picture:</label>
+        <input type="file" id="profile" name="profile" accept="image/*">
+        <!-- <input type="file"> creates a file upload button -->
+        <!-- accept filters the allowed file types -->
+        <br><br>
+
+        <!-- HIDDEN INPUT -->
+        <input type="hidden" name="user_id" value="12345">
+        <!-- <input type="hidden"> sends data without showing it to the user -->
+
+        <!-- FIELDSET AND LEGEND -->
+        <fieldset>
+            <!-- <fieldset> groups related form elements with a box border -->
+            <legend>Additional Information</legend>
+            <!-- <legend> provides a caption for the fieldset -->
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Your city">
+            <br><br>
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" placeholder="12345">
+        </fieldset>
+        <br>
+
+        <!-- SUBMIT AND RESET BUTTONS -->
+        <input type="submit" value="Submit Form">
+        <!-- <input type="submit"> sends the form data -->
+
+        <input type="reset" value="Reset Form">
+        <!-- <input type="reset"> clears all form fields -->
+
+        <button type="button">Click Me (Button Tag)</button>
+        <!-- <button> is a clickable button — more flexible than <input type="button"> -->
+
+    </form>
+
+
+    <!-- ============================================================ -->
+    <!--               AUDIO AND VIDEO                                -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>Audio and Video</h2>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <!-- <audio> embeds a sound file. controls shows play/pause buttons -->
+        <source src="audio.mp3" type="audio/mpeg">
+        <!-- <source> specifies the media file. Multiple can be listed as fallback -->
+        Your browser does not support the audio element.
+        <!-- Fallback text shown if browser doesn't support audio -->
+    </audio>
+
+    <h3>Video</h3>
+    <video width="320" height="240" controls>
+        <!-- <video> embeds a video. controls adds play/pause/volume UI -->
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <h3>Embed YouTube Video (iframe)</h3>
+    <iframe width="400" height="250"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        allowfullscreen>
+    </iframe>
+    <!-- <iframe> embeds another webpage or video inside your page -->
+    <!-- allowfullscreen lets the video go full screen -->
+
+
+    <!-- ============================================================ -->
+    <!--               SEMANTIC / LAYOUT TAGS                         -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>Semantic Layout Tags (HTML5)</h2>
+    <!-- Semantic tags give MEANING to parts of the page — helpful for SEO and accessibility -->
+
+    <header>
+        <!-- <header> represents the top section (logo, navigation, title) -->
+        <h1>My Website Header</h1>
+        <nav>
+            <!-- <nav> defines a navigation menu -->
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Blog</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+        <!-- <main> holds the primary/dominant content of the page -->
+
+        <article>
+            <!-- <article> represents independent, self-contained content (blog post, news) -->
+            <h2>Article Title</h2>
+            <p>This is an article. It makes sense on its own and could be shared independently.</p>
+
+            <section>
+                <!-- <section> groups related content within a page or article -->
+                <h3>Section Inside Article</h3>
+                <p>A section is a thematic grouping of content, typically with its own heading.</p>
+            </section>
+        </article>
+
+        <br>
+
+        <aside>
+            <!-- <aside> defines content related to but separate from the main content (sidebars) -->
+            <h3>Did You Know?</h3>
+            <p>HTML was created by Tim Berners-Lee in 1991!</p>
+        </aside>
+
+    </main>
+
+    <br>
+
+    <footer>
+        <!-- <footer> defines the bottom section (copyright, contact, links) -->
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <!-- &copy; is an HTML entity for the © copyright symbol -->
+    </footer>
+
+
+    <!-- ============================================================ -->
+    <!--               DIVISION AND SPAN                              -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>div and span</h2>
+
+    <div>
+        <!-- <div> is a BLOCK-level container — used to group elements (takes full width) -->
+        <p>This paragraph is inside a div. Divs are used to group and structure content.</p>
+        <p>Another paragraph inside the same div.</p>
+    </div>
+
+    <p>This sentence has a <span>span tag</span> inside it.</p>
+    <!-- <span> is an INLINE container — used to style or group small parts of text -->
+    <!-- Unlike div, span does NOT start on a new line -->
+
+
+    <!-- ============================================================ -->
+    <!--               HTML ENTITIES (Special Characters)             -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>HTML Entities (Special Characters)</h2>
+
+    <p>
+        &lt; = Less than sign (&amp;lt;) <br>
+        &gt; = Greater than sign (&amp;gt;) <br>
+        &amp; = Ampersand (&amp;amp;) <br>
+        &quot; = Double quote (&amp;quot;) <br>
+        &apos; = Single quote (&amp;apos;) <br>
+        &copy; = Copyright symbol <br>
+        &reg; = Registered trademark symbol <br>
+        &trade; = Trademark symbol <br>
+        &euro; = Euro sign &euro; <br>
+        &pound; = Pound sign &pound; <br>
+        &nbsp; = Non-breaking space (keeps words together) <br>
+        &hearts; = Heart symbol &hearts; <br>
+        &star; = Star symbol &#9733;
+    </p>
+
+
+    <!-- ============================================================ -->
+    <!--               META INFORMATION TAGS                          -->
+    <!-- ============================================================ -->
+
+    <hr>
+    <h2>Other Useful Tags</h2>
+
+    <p>
+        The <address> tag defines contact information:
+    </p>
+    <address>
+        <!-- <address> represents contact information for the author/owner -->
+        Written by John Doe.<br>
+        Email: <a href="mailto:john@example.com">john@example.com</a><br>
+        Address: 123 Main St, Dhaka, Bangladesh.
+    </address>
+
+    <br>
+
+    <p>The <time> tag represents a specific time or date:</p>
+    <time datetime="2024-01-01">January 1, 2024</time>
+    <!-- <time> represents dates/times in machine-readable format -->
+
+    <br><br>
+
+    <details>
+        <!-- <details> creates a collapsible disclosure widget -->
+        <summary>Click to show more details</summary>
+        <!-- <summary> is the visible heading for the details block -->
+        <p>This hidden content is revealed when the user clicks the summary above!</p>
+    </details>
+
+    <br>
+
+    <progress value="70" max="100">70%</progress>
+    <!-- <progress> shows a progress bar -->
+
+    <br><br>
+
+    <meter value="0.6">60%</meter>
+    <!-- <meter> represents a scalar measurement within a known range (like disk usage) -->
+
+    <br><br>
+
+    <!-- HTML COMMENT SYNTAX -->
+    <!-- This is how you write a comment in HTML — it is NOT visible on the page -->
+    <!-- Comments are only visible in the source code and are used to explain the code -->
+
+
+</body>
+<!-- End of the visible page content -->
+
+</html>
+<!-- End of the HTML document -->
